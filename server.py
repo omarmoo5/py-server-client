@@ -7,10 +7,34 @@ def handle_conn(connection, address):
         print(f"Connected by {address}")
         while True:
             data = connection.recv(1024)
-            print(f"Received {data!r}")
+            parse_data(data)
+            # print(f"Received {data!r}")
             if not data:
                 break
             connection.sendall(data)
+
+
+def parse_data(data):
+    data = data.decode()
+    data = data.split("\r\n")
+    req_type = data[0].split()[0]
+
+    if req_type == 'GET':
+        print("IN GET")
+    elif req_type == 'POST':
+        print("IN POST")
+    else:
+        print("BAD")
+
+
+def handle_GET(request):
+    # TODO: handle get
+    pass
+
+
+def handle_POST(request):
+    # TODO: handle post
+    pass
 
 
 if __name__ == '__main__':

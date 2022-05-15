@@ -1,0 +1,16 @@
+GET ssimple.txt 127.0.0.1 80
+GET simple.txt 127.0.0.1 80
+GET hello2.txt 127.0.0.1
+GET hello6.txt 127.0.0.1
+sd
+
+GET hello2.txt 127.0.0.1 79
+GET lol.jpeg localhost
+GET hello5.txt 127.0.0.1
+GET hello2.txt 127.0.0.1 79
+GET hello2.txt 127.0.0.1 79
+GET hello2.txt 127.0.0.1 79
+GET hello5.txt 127.0.0.1
+POST wise.jpg localhost
+
+
